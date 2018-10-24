@@ -12,30 +12,27 @@
 </head>
 <body>
 <h2> Currency Converter</h2>
-<form method="get">
+<form method="post">
     <label>Rate:</label><br/>
     <input type="text" name="rate" placeholder="RATE" value="22000"><br/>
     <label>USD:</label><br/>
     <input type="text" name="usd" placeholder="USD" value="0"><br/>
     <input type="submit" name="submit" value="Convertet">
+    <h1>VND:${vnd}</h1>
 </form>
-<%!
-    float rate;
-    float usd;
-    float vnd;
-%>
-<%
-    if (request.getParameter("submit") != null) {
-        rate = Float.parseFloat(request.getParameter("rate"));
-        usd = Float.parseFloat(request.getParameter("usd"));
-        vnd = rate * usd;
-    }
-%>
-<h1>Rate: <%=rate%>
-</h1>
-<h1>USD: <%=usd%>
-</h1>
-<h1>VND: <%=vnd%>
-</h1>
+<%--<%!--%>
+    <%--float rate;--%>
+    <%--float usd;--%>
+    <%--float vnd;--%>
+<%--%>--%>
+<%--<%--%>
+    <%--if (request.getParameter("submit") != null) {--%>
+        <%--rate = Float.parseFloat(request.getParameter("rate"));--%>
+        <%--usd = Float.parseFloat(request.getParameter("usd"));--%>
+        <%--vnd = rate * usd;--%>
+    <%--}--%>
+<%--%>--%>
+
+<%--<h1>VND:${vnd}</h1>--%>
 </body>
 </html>
